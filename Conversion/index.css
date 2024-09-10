@@ -1,0 +1,23 @@
+.container{
+  border: solid black;
+  background-color: lightyellow ;
+  width: 60%;
+  height: 60%;  
+  padding: 90px;
+  min-height: 10vh;
+  min-width: 10h;
+
+}
+.convert{
+background-color: lightgreen;
+border-radius: 10px;  
+  
+}
+h2{
+ text-align: center; 
+}
+
+.reset{
+background-color: red;
+border-radius: 10px;  
+}
