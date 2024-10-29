@@ -1,0 +1,65 @@
+{
+  
+  "product":[{
+    
+    "name": "Lamborghini Aventador S Coupe",
+    "description": "The indomitable V12 engine of Aventador SVJ stands out for its exceptional design and the advanced technology of its materials. Boasting 770 CV at 8,500 RPMs, and capable of accelerating from 0-100 km/h in 2.8 seconds, Aventador SVJ provides thrills unlike anything that has ever been experienced before.",
+    "image": "aventador.jpg",
+    "price": "$498,999"
+    },
+  {
+    "name": "Bugatti Chiron",
+    "description": "This beast of an engine employs four turbochargers to generate a mighty 1500 horsepower and 1180 pound-feet of torque. Bugatti claims that the Chiron makes the dash from zero to 60 mph in a mere 2.3 seconds, and it has a top speed of 261 mph.",
+    "image": "bugatti chiron.jpg",
+    "price": "$3,000,000"
+    },
+  {
+    "name": "2025 Chevrolet Corvette",
+    "description": "It's the entry point to Chevy's sports car lineup but the 2025 Corvette Stingray is anything but basic. This high-value performer comes with a 490-hp 6.2-liter V-8 engine mounted behind the cabin—enough grunt to pull off a 2.8-second 60-mph time in our testing.",
+    "image": "2025 Chevrolet Corvette.jpg",
+    "price": "$76,995"
+    },
+  {
+    "name": "McLaren 765LT",
+    "description": "765LT is the most powerful LT supercar ever made with 765PS and 800Nm of torque from a 4.0 litre twin-turbocharged V8. 765LT features an exceptional final drive constructed from Formula 1-grade materials. The release of the most powerful McLaren LT to date will undoubtedly quicken your heartbeat.",
+    "image": "McLaren 765LT.jpg",
+    "price": "$382,500"
+   },
+  {
+    "name": "AUDI R8",
+    "description": "The impeccably styled Audi R8 made its US debut in the fall of 2007 as a mid-engine supercar combining performance and everyday drivability. It remains as an Audi through and through, retaining the hallmark quattro all-wheel drive system and its Aluminum Space Frame construction.",
+    "image": "AUDI R8.jpg",
+    "price": "$253,290" 
+    },
+  {
+    "name": "Hennessey Venom F5",
+    "description": "The Venom F5 is an all-new hypercar designed and built from the ground up with one goal in mind: To be the absolute fastest road car on earth. Hennessey and team have developed a completely new design, chassis and carbon fiber body focused on aerodynamics to achieve the lowest possible drag.",
+    "image": "Hennessey Venom F5.jpg",
+    "price": "$2,100,000"
+    },
+  {
+    "name": "Honda Civic Type-R 2024",
+    "description": "It is available in 2 variants, 1 engine, and 1 transmissions option: Manual in the Philippines. It has a ground clearance of 123 mm and dimensions is 4593 mm L x 1890 mm W x 1407 mm H.",
+    "image": "Honda.jpg",
+    "price": "₱3,870,000"
+   },
+  {
+    "name": "Aston Martin Rapide",
+    "description": "an exceptional performance car, as implied by the low, sleek and elegant bodywork. The track-honed chassis is equally at home on winding backroads, soaring mountain ascents or high-speed continental carriageways.",
+    "image": "Aston Martin Rapide.jpg",
+    "price": "$252,887" 
+   },
+  { 
+    "name": "Ford Mustang Shelby GT500",
+    "description": "The most powerful engine ever stuffed into a Ford production car lurks behind the Shelby GT500's menacing mug. Aptly called Predator, the motor is a supercharged 5.2-liter V-8 that summons 760 horsepower and 625 pound-feet of torque.",
+    "image": "FORD.jpg",
+    "price": "$2,000,000"
+   },
+  {
+    "name": "Mustang",
+    "description": "It has been a part of Nepal since the 18th century but its location and its forced status as a 'forbidden kingdom' has protected it from the influences of the western world.",
+    "image": "mustang.jpg",
+    "price": "$3,320,000"
+    }
+  ]
+}

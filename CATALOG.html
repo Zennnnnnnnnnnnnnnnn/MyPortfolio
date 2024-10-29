@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE CAR SHOP</title>
+   <link rel="stylesheet" href="CATALOG.css">
+</head>
+<body>
+    <h1 align = "center">ZEN'S CAR SHOP</h1>
+    <div class="container" id="zenji"></div>
+
+    <script>
+        // Fetch data from the JSON file
+      fetch('CATALOG.json')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('zenji');
+                
+      data.product.forEach(car=> { 
+        const zen= document.createElement('zenji');
+        zen.className = 'car-card';
+        zen.innerHTML = `<img src="${car.image}" car="${car.name}">
+             <h3>${car.name}</h3>
+             <p>${car.description}</p>
+             <p class="price">${car.price}</p>
+                    `;
+               container.appendChild(zen);
+          });
+      })
+         .catch(error => {
+            console.error('error', error);
+         });
+    </script>
+    <footer>
+      <p>Designed By: ZENJI CRISOSTOMO</p>
+      <p>G-12 COOPER</p>
+    </footer>
+</body>
+</html>
