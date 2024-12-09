@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christmas Thank You Letter</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    div {
+      border-style: inset;
+      border-radius: 5px;
+    }
+
+    /* Add white dots as stars in the background */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, white 2%, transparent 2%) 5px 5px;
+      background-size: 10px 10px;
+      pointer-events: none;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="text-align: center">
+    <svg width="200" height="400" viewBox="-100 -200 200 400">
+      <!-- Star moved further up -->
+      <polygon points="0,-130 8,-112 25,-112 10,-100 15,-80 0,-92 -15,-80 -10,-100 -25,-112 -8,-112" fill="yellow" />
+      <!-- Tree -->
+      <polygon points="0,0 80,120 -80,120" fill="#234236" />
+      <polygon points="0,-40 60,60 -60,60" fill="#0C5C4C" />
+      <polygon points="0,-80 40,0 -40,0" fill="#38755B" />
+      <!-- Trunk -->
+      <rect x="-20" y="120" width="40" height="30" fill="brown" />
+    </svg>
+  </div>
+  <div style="text-align: center">
+    <a href="letter.html" class="btn1">Open Letter</a>
+  </div>
+
+</body>
+
+</html>
