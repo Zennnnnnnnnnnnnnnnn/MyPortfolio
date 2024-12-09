@@ -1,0 +1,220 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121; /* Darker background for better contrast */
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFEB3B;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Game container styling */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #263238;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 900px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Container hover effect */
+.game-container:hover {
+    transform: translateY(-8px);
+}
+
+/* Draggable items and droppable areas */
+.container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Add a message under the items */
+.draggableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.draggableBox {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ECEFF1;
+    transition: background-color 0.3s ease;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+}
+
+.droppableBox {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ECEFF1;
+    transition: background-color 0.3s ease;
+    grid-template-columns: 1fr;
+    width: 200px;
+}
+
+/* Draggable box styling */
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #0277BD;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 12px;
+    cursor: grab;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+}
+
+/* Droppable area styling */
+.droppable {
+    width: 200px;
+    height: 150px;
+    background-color: #B0BEC5;
+    border: 2px dashed #0277BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-radius: 8px;
+    color: #263238;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.droppable.drag-over {
+    background-color: #81D4FA;
+    border-color: #01579B;
+    transform: scale(1.05);
+}
+
+/* Correct and wrong styles for dropped boxes */
+.box.correct {
+    background-color: #66BB6A; /* Green for correct */
+}
+
+.box.wrong {
+    background-color: #FF7043; /* Red for wrong */
+}
+
+/* Remarks and score board styling */
+.board {
+    margin-top: 40px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.3em;
+    color: #263238;
+}
+
+.board p {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Reset button styling */
+#resetButton {
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: #0288D1;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#resetButton:hover {
+    background-color: #01579B;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#resetButton:focus {
+    outline: none;
+}
+
+/* Additional Style for Instructions */
+.instructions {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #FFEB3B;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Style for the game container when all items are correctly placed */
+.game-container.all-correct {
+    background-color: #FFEB3B; /* Yellow when all are correct */
+}
+
+/* Style for the game container when some are correct but others are wrong */
+.game-container.correct {
+    background-color: #66BB6A; /* Green when partially correct */
+}
+
+/* Style for the game container when some are wrong */
+.game-container.wrong {
+    background-color: #FF7043; /* Red when there's a mistake */
+}

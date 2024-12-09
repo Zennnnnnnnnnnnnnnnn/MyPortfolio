@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Function - Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guess the Function Body - Drag and Drop</h1>
+    </header>
+
+    <div class="game-container">
+        <div class="container">
+            <div class="draggableContainer">
+                <h2>Items</h2>
+                <div class="draggableBox" id="draggableBox">
+                    <div class="box" draggable="true" id="box1">Nose</div>
+                    <div class="box" draggable="true" id="box2">Mouth</div>
+                    <div class="box" draggable="true" id="box3">Eye</div>
+                    <div class="box" draggable="true" id="box4">Hand</div>
+                </div>
+            </div>
+
+            <div class="droppableContainer">
+                <h2>Functions</h2>
+                <div class="droppableBox">
+                    <div class="droppable" data-draggable-id="box4">Touch</div>
+                    <div class="droppable" data-draggable-id="box3">Sight</div>
+                    <div class="droppable" data-draggable-id="box1">Smelling</div>
+                    <div class="droppable" data-draggable-id="box2">Taste</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <p>Remarks: <span id="remarks"></span></p>
+            <p>Score: <span id="scores">0</span></p>
+        </div>
+        <button id="resetButton">Reset Game</button> <!-- Reset Button -->
+    </div>
+</body>
+</html>
