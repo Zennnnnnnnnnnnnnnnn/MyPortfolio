@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Function - Drag and Drop</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Guess the Function Body - Drag and Drop</h1>
+    </header>
+
+    <div class="game-container">
+        <!-- Draggable Items Section -->
+        <div class="container">
+            <div class="draggableContainer">
+                <h2>Items</h2>
+                <div class="draggableBox" id="draggableBox">
+                    <!-- Draggable items -->
+                    <div class="box" draggable="true" id="box1">Nose</div>
+                    <div class="box" draggable="true" id="box2">Mouth</div>
+                    <div class="box" draggable="true" id="box3">Eye</div>
+                    <div class="box" draggable="true" id="box4">Hand</div>
+                    <div class="box" draggable="true" id="box5">Ear</div>
+                    <div class="box" draggable="true" id="box6">Leg</div>
+                    <div class="box" draggable="true" id="box7">Brain</div>
+                    <div class="box" draggable="true" id="box8">Lungs</div>
+                    <div class="box" draggable="true" id="box9">Inner Ear</div>
+                    <div class="box" draggable="true" id="box10">Pen</div>
+                </div>
+            </div>
+
+            <!-- Droppable Functions Section -->
+            <div class="droppableContainer">
+                <h2>Functions</h2>
+                <div class="droppableBox">
+                    <!-- Droppable areas -->
+                    <div class="droppable" data-draggable-id="box4">Touch</div>
+                    <div class="droppable" data-draggable-id="box3">Sight</div>
+                    <div class="droppable" data-draggable-id="box1">Smelling</div>
+                    <div class="droppable" data-draggable-id="box2">Taste</div>
+                    <div class="droppable" data-draggable-id="box5">Hearing</div>
+                    <div class="droppable" data-draggable-id="box9">Balance</div>
+                    <div class="droppable" data-draggable-id="box6">Walking</div>
+                    <div class="droppable" data-draggable-id="box7">Thinking</div>
+                    <div class="droppable" data-draggable-id="box10">Writing</div>
+                    <div class="droppable" data-draggable-id="box8">Breathing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remarks and Scoreboard -->
+        <div class="board">
+            <p>Remarks: <span id="remarks"></span></p>
+            <p>Score: <span id="scores">0</span></p>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="resetButton">Reset Game</button>
+    </div>
+</body>
+</html>
